@@ -25,3 +25,31 @@ body {
 .main-header {
     position: relative;
 }
+.layers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.main-article {
+    min-height: 100vh;
+}
+
+.layers_base{
+    transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+}
+
+
+
